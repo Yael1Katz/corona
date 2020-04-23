@@ -11,7 +11,8 @@ const alerts = [
 const useStyles = makeStyles(theme => ({
     paper: {
         width: '50%',
-        height: '100%'
+        height: '100%',
+        marginRight: '10px'
     },
     graphIframe: {
         height: "calc('100%')",

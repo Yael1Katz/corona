@@ -11,13 +11,14 @@ const useStyles = makeStyles(theme => ({
     //   justifyContent: 'space-between',
       height: '55%',
       width: '100%',
-      '& :not(:last-child)': {
-          marginRight: '10px'
-      }
+    //   marginRight: '10px'
+    //   '& :not(:last-child)': {
+    //       marginRight: '10px'
+    //   }
     },
     alertsSection: {
         // margin: '5px',
-        width: '33%',
+        width: '30%',
         display: 'flex',
         flexDirection: 'column'
     }

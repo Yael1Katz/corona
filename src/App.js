@@ -12,12 +12,16 @@ import Dashboard from './components/Dashboard/Dashboard';
 const useStyles = makeStyles(theme => ({
   root: {
     // display: 'flex'
-    height: '100%'
+    height: '100%',
+    // backgroundColor: '#dbdada'
   },
   tabs: {
     backgroundColor: '#000000',
     display: 'flex',
     padding: '10px'
+  },
+  clear: {
+    clear: "both"
   }
 }));
 
@@ -28,9 +32,10 @@ function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />
+      {/* <AppBar position="static"> */}
       <AppBar position="static">
           <Tabs value={value} className={classes.tabs} onChange={() => {}} aria-label="simple tabs example">
-            <div style={{marginRight: 'auto'}}>
+            <div style={{marginRight: 'auto', marginLeft: '20px'}}>
               <span style={{fontSize: '50px', color: '#FFFFFF'}}>
                   Pan
               </span>
@@ -45,7 +50,10 @@ function App() {
             <Tab label="Enforcements" value={4} />
           </Tabs>
       </AppBar>
-      <Dashboard />
+      <Dashboard>
+        
+      </Dashboard>
+      <div  className={classes.clear}></div>
     </div>
   );
 }

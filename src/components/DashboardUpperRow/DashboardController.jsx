@@ -15,13 +15,14 @@ import FormLabel from '@material-ui/core/FormLabel';
 const useStyles = makeStyles((theme, props) => {
     return ({
         dashboardController: {
-            width: '16%',
+            width: '20%',
         },
         formControl: {
             minWidth: 140
         },
         paper: {
             // margin: '5px',
+            marginRight: '10px',
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
@@ -66,9 +67,9 @@ export default ({ height, padding }) => {
                 <FormControl component="fieldset" className={classes.formControl}>
                     <FormLabel component="legend">Category</FormLabel>
                     <RadioGroup aria-label="category" name="category" value={categoryState} onChange={onCategoryChange}>
-                        <FormControlLabel value="cat1" control={<Radio />} label="Category 1" />
-                        <FormControlLabel value="cat2" control={<Radio />} label="Category 2" />
-                        <FormControlLabel value="cat3" control={<Radio />} label="Category 3" />
+                        <FormControlLabel value="cat1" control={<Radio />} label="Current Outbreak" />
+                        <FormControlLabel value="cat2" control={<Radio />} label="Forcast Outbreak" />
+                        <FormControlLabel value="cat3" control={<Radio />} label="Diagnosed only" />
                     </RadioGroup>
                 </FormControl>
                 <Typography id="discrete-slider-small-steps" gutterBottom>
