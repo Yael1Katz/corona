@@ -9,7 +9,8 @@ const useStyles = makeStyles(theme => ({
       flexDirection: 'column',
       height: '100%',
       width: '100%',
-      padding: '10px'
+      padding: '10px',
+      paddingTop: '100px'
     }
 }));
 

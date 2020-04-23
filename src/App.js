@@ -13,15 +13,13 @@ const useStyles = makeStyles(theme => ({
   root: {
     // display: 'flex'
     height: '100%',
-    // backgroundColor: '#dbdada'
+    backgroundColor: '#dbdada'
+    // backgroundSize: 'cover'
   },
   tabs: {
     backgroundColor: '#000000',
     display: 'flex',
     padding: '10px'
-  },
-  clear: {
-    clear: "both"
   }
 }));
 
@@ -33,7 +31,7 @@ function App() {
     <div className={classes.root}>
       <CssBaseline />
       {/* <AppBar position="static"> */}
-      <AppBar position="static">
+      <AppBar>
           <Tabs value={value} className={classes.tabs} onChange={() => {}} aria-label="simple tabs example">
             <div style={{marginRight: 'auto', marginLeft: '20px'}}>
               <span style={{fontSize: '50px', color: '#FFFFFF'}}>
@@ -53,7 +51,6 @@ function App() {
       <Dashboard>
         
       </Dashboard>
-      <div  className={classes.clear}></div>
     </div>
   );
 }
